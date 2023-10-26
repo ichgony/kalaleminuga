@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clownfish Minnow</title>
+    <link rel="stylesheet" href="../style/pood.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h3>KALALE MINUGA</h3>
+      <div id="nav-links">
+        <a class="nav-link " href="../index.html">Avaleht</a>
+        <a class="nav-link current" href="../pood.html">Pood</a>
+        <a class="nav-link " href="../meist.html">Meist</a>
+      </div>
+    </header>
+
+    <main>
+      <h1>Pood</h1>
+
+      <div class="padded-content">
+        <!-- CUSTOM product -->
+        <h2 class="product-title">Clownfish Minnow</h2>
+        <h3 class="product-price">25 &euro;</h3>
+        <div class="product-content">
+          <!-- CUSTOM src -->
+          <img src="../media/clownfish-minnow.png" alt="Clownfish Minnow" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est
+            rem explicabo aliquam deserunt amet, illo tempore qui adipisci
+            numquam eveniet laborum, repellendus quis quasi praesentium labore
+            maxime, iste doloremque?
+          </p>
+        </div>
+        <!-- end of custom product -->
+
+        <!-- Form -->
+        <form action="submit">
+          <div class="form-section">
+            <label for="input-name">Nimi</label>
+            <input type="text" id="input-name" />
+          </div>
+          <div class="form-section">
+            <label for="input-email">Email</label>
+            <input type="email" autocomplete="on" id="input-email" />
+          </div>
+          <div class="form-section">
+            <label for="input-name">Telefon</label>
+            <input
+              type="tel"
+              id="input-phone"
+              pattern="(372)?([0-9]{7}|[0-9]{8}|[0-9]{12})"
+            />
+            <small>Formaat: 51234567</small>
+          </div>
+          <div class="form-section">
+            <label for="input-address">Aadress</label>
+            <input type="text" id="input-address" />
+          </div>
+          <div class="form-section">
+            <label for="input-quantity">Kogus</label>
+            <input type="number" id="input-quantity" />
+          </div>
+          <div class="form-section">
+            <label for="input-payment">Makseviis</label>
+            <select id="input-payment">
+              <option value="transfer">Pangaülekanne</option>
+              <option value="lhv">LHV</option>
+              <option value="swedbank">Swedbank</option>
+              <option value="seb">SEB</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <h4>Kohaletoimetamine</h4>
+            <div class="one-row">
+              <input
+                type="radio"
+                id="input-delivery-kuller"
+                name="delivery"
+                value="kuller"
+              />
+              <label for="input-delivery-kuller">Kulleriga</label>
+            </div>
+            <div class="one-row">
+              <input
+                type="radio"
+                id="input-delivery-pakiautomaat"
+                name="delivery"
+                value="pakiautomaat"
+              />
+              <label for="input-delivery-pakiautomaat">Pakiautomaat</label>
+            </div>
+            <div class="one-row">
+              <input
+                type="radio"
+                id="input-delivery-ise"
+                name="delivery"
+                value="ise"
+              />
+              <label for="input-delivery-ise">Tulen ise järgi</label>
+            </div>
+          </div>
+          <div class="form-section">
+            <button id="submit-button">ESITA TELLIMUS</button>
+          </div>
+        </form>
+        <!-- End of Form -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <p>
+          email:
+          <a href="mailto:kalale.minuga@gmail.com">kalale.minuga@gmail.com</a>
+        </p>
+        <p>telefon: <a href="tel:+37254541010">5454 1010</a></p>
+        <p>Kalale Minuga OÜ</p>
+      </div>
+      <div id="social-media-icons">
+        <a href="#" target="_blank" class="fa fa-twitter"></a>
+        <a href="#" target="_blank" class="fa fa-linkedin-square"></a>
+      </div>
+    </footer>
+
+    <script src="toode.js"></script>
+  </body>
+</html>
