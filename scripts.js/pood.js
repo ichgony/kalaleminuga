@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cards[i].addEventListener("click", () => {
       const currentUrl = window.location.pathname;
       window.location.replace(
-        currentUrl.replace("pages/pood.html", `kalaleminuga/pages/toode/${cardnames[i]}.html`)
+        currentUrl.replace("pages/pood.html", `../kalaleminuga/pages/toode/${cardnames[i]}.html`)
       );
       let parentDir = currentPath;
       console.log(parentDir);
